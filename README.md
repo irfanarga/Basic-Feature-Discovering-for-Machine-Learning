@@ -48,3 +48,9 @@ Fitur keempat adalah Is_Maried yang berisi status pernikahan jenis kelamin perem
 ## Hasil model Random Forest Classifier dengan perhitungan akurasi cross_val_score
 Dataset dengan FE
 
+![](https://github.com/irfanarga/Basic-Feature-Discovering-for-Machine-Learning/blob/master/Model%20accuration%20with%20FE.png)
+
+Dataset tanpa FE
+
+![](https://github.com/irfanarga/Basic-Feature-Discovering-for-Machine-Learning/blob/master/Model%20accuration%20without%20FE.png)
+
