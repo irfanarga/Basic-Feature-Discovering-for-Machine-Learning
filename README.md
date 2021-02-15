@@ -32,8 +32,10 @@ The first feature/column created is Family_Size, which is a combination of Paren
 
 The second feature/column that is created is to combine Family_Size with its respective groups depending on the number.
 
-The categories are as follows:
+The categories are follows:
 - Family Size 1 = Alone
 - Family Size 2, 3, and 4 = Small
 - Family Size 5 and 6 = Medium
 - Family Size 7, 8 and 11 = Large
+
+The third feature/column created is Ticket_Frequency with the combined value of the same Ticket.
