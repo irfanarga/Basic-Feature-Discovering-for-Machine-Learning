@@ -54,3 +54,4 @@ Dataset tanpa FE
 
 ![](https://github.com/irfanarga/Basic-Feature-Discovering-for-Machine-Learning/blob/master/Model%20accuration%20without%20FE.png)
 
+Akurasi meningkat sekitar 0.2, artinya fitur yang telah dibuat dapat menaikkan 2% akurasi model. Akurasi ini tidak absolut dan dapat berubah, tergantung dari banyak faktor, termasuk dari parameter yang dimasukkan. Fitur yang dibuat pun dapat menrunkan akurasi model tergantung tipe model yang digunakan.
