@@ -1,21 +1,21 @@
 # Basic Feature Discovering for Machine Learning
-The goals are comparing the model with featuring engineering and without featuring engineering
+Project ini bertujuan untuk membandingkan akurasi model antara dataset yang telah ditambahkan Feature Engineering (FE) dan tanpa FE.  
 
-### Using the library:
-- Pandas
-- Matplotlib
-- Seaborn
-- Sklearn
+### Library yang digunakan yaitu:
+- Pandas untuk proses dataframe dan csv
+- Matplotlib untuk plotting grafik
+- Seaborn untuk plotting grafik
+- Sklearn untuk machine learning model
 
 ### Dataset
-In this dataset, there is a Survived column as a target variable. All other columns/features will be used to determine whether this passenger survived the Titanic incident.
+Dataset ini berisi data dari semua orang yang ikut di dalam Kapal Titanic. Kolom Survived dijadikan variabel target dan semua kolom lain digunakan sebagai penentu apakah penumpang selamat atau tidak.
 
 ### Data cleansing and Correlation
 Filling Missing Value
 
 ![](https://github.com/irfanarga/Basic-Feature-Discovering-for-Machine-Learning/blob/master/Missing%20value.png)
 
-There are some missing value in the Age, Cabin, and Embarked column
+Ada beberapa data yang kosong di kolom Embarked, Age dan Cabin
 
 - Missing value in the Age data is filled with the median value of Age data based on passenger class (Pclass) and Sex
 - For Embarked, most of the people from Titanic depart from Southampton/S, so we can fill it with S.
@@ -25,7 +25,7 @@ Correlation
 
 ![](https://github.com/irfanarga/Basic-Feature-Discovering-for-Machine-Learning/blob/master/Correlation.png)
 
-The correlation results show that the target variable (Survived) has a very large correlation with PClass and Fare. Meanwhile, Age is closely related to Pclass, Sibling Spouse (SibSp), Parent Children (Parch). It can be assumed that most of the survivors are people with upper Pclass and a person's parents can say he will bring siblings/parents/children/spouse. And Fare (price) is of course related to the Pclass (passenger class) of a passenger.
+Nilai korelasi mendekati 1 untuk korelasi positif dan -1 untuk korelasi negatif/terbalik. Pada data ini dapat dilihat bahwa variabel Survived sangat besar korelasinya dengan Pclass dan Fare. Sedangkan Age sangat berkaitan dengan Pclass, Sibling Spouse (SibSp), Parent Children (Parch). Dapat diasumsikan bahwa kebanyakan orang yang selamat adalah orang dengan PClass atas dan Tuanya umur seseorang dapat dikatakan dia akan membawa saudara/orang tua/anak/pasangan. Dan Fare (harga) tentu saja berkaitan dengan Pclass (kelas penumpang) seorang penumpang. 
 
 ### Feature Engineering
 The first feature/column created is Family_Size, which is a combination of Parent, Children, Sibling, and Spouse. Then add 1 assuming that person counts himself too.
