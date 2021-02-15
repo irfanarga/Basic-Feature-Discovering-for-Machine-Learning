@@ -27,8 +27,13 @@ Correlation
 
 The correlation results show that the target variable (Survived) has a very large correlation with PClass and Fare. Meanwhile, Age is closely related to Pclass, Sibling Spouse (SibSp), Parent Children (Parch). It can be assumed that most of the survivors are people with upper Pclass and a person's parents can say he will bring siblings/parents/children/spouse. And Fare (price) is of course related to the Pclass (passenger class) of a passenger.
 
-### Visualization
+### Feature Engineering
+The first feature/column created is Family_Size, which is a combination of Parent, Children, Sibling, and Spouse. Then add 1 assuming that person counts himself too.
 
-![]
+The second feature/column that is created is to combine Family_Size with its respective groups depending on the number.
 
-The graph shows that passengers departing from Cherbourg were more likely to survive, while passengers from Southampton, only half survived. For people carrying only 1 Parent / Child, more survivors. For Passenger Class 1, the chances of survival are much higher. And only a few passengers with Passenger Class 3 survived. And the person carrying 1 Sibling / Spouse is much more likely to survive. The person carrying 2 Siblings/ Spouses is quite unlikely to survive.
+The categories are as follows:
+- Family Size 1 = Alone
+- Family Size 2, 3, and 4 = Small
+- Family Size 5 and 6 = Medium
+- Family Size 7, 8 and 11 = Large
